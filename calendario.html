@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Planificación semanal</title>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 8px;
+  }
+
+  h1 {
+    font-family: "Times New Roman", serif;
+  }
+
+  table {
+    width: 100%;
+    border: 3px dotted #000000;      /* border, border-style */
+    border-spacing: 4px;             /* separación entre celdas */
+    padding: 2px;
+  }
+
+  th, td {
+    height: 40px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  th {
+    background-color: #333333;
+    color: #ffffff;
+    height: 70px;
+    width: 10%;
+  }
+
+  th.bloques {
+    width: 20%;
+  }
+
+  /* Cabeceras de fila (Mañana / tarde) */
+  tr:nth-child(n+2) th {
+    height: 30px;
+  }
+
+  td.azul {
+    background-color: #0a50ff;
+  }
+
+  td.claro {
+    background-color: #d9f7f7;
+  }
+
+  /* Filas impares y pares de distinto color */
+  tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  tr:nth-child(even) {
+    background-color: #D6EEEE;
+  }
+
+  /* Cambia de color al pasar el ratón por la fila */
+  tr:hover {
+    background-color: #ffd166;
+  }
+</style>
+</head>
+<body>
+
+<h1>Planificación semanal</h1>
+
+<table>
+  <tr>
+    <th class="bloques">Bloques horarios</th>
+    <th>Lunes</th>
+    <th>Martes</th>
+    <th>Miércoles</th>
+    <th>Jueves</th>
+    <th>Viernes</th>
+    <th>Sábado</th>
+    <th>Domingo</th>
+  </tr>
+  <tr>
+    <th>Mañana</th>
+    <td class="azul">Estudiar</td>
+    <td class="claro">Estudiar</td>
+    <td class="azul">Estudiar</td>
+    <td class="claro">Estudiar</td>
+    <td class="azul">Estudiar</td>
+    <td class="claro" rowspan="2">Estudiar</td>
+    <td class="azul" rowspan="2">Descansar</td>
+  </tr>
+  <tr>
+    <th>tarde</th>
+    <td class="azul" colspan="5">Clases IES Miralcamp - 1ro DAW</td>
+  </tr>
+</table>
+
+</body>
+</html>
